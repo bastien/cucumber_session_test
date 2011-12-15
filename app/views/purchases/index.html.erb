@@ -1,0 +1,12 @@
+<% if session['logged_in'] %>
+  <%= render 'sessions/destroy' %>
+<% else %>
+  <%= render 'sessions/new' %>
+<% end %>
+
+<p>Status: <%= session['logged_in'] %></p>
+
+<h2>Purchases</h2>
+<%= form_tag 'http://www.billing.com/billing/cucumber-test/billing_info' do %>
+  <%= submit_tag 'Purchase' %>
+<% end %>
