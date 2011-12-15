@@ -1,4 +1,5 @@
 Small test app created to illustrate a problem with Capybara 1.1.*
 After submitting a form to another server (here faked by an embedded Sinatra app), which in turn redirects back to our app, the session data is lost
 
-To see the test fail just run:``` cucumber ```
+To see the test fail just run: cucumber
+Or: rake test
